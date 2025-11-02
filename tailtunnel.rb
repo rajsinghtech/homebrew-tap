@@ -5,23 +5,23 @@
 class Tailtunnel < Formula
   desc "A web dashboard for Tailscale with browser-based SSH and network diagnostics"
   homepage "https://github.com/rajsinghtech/tailtunnel"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
   depends_on "node"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-darwin-amd64.tar.gz"
-      sha256 "d7ed26a1168268e1ff0767589cada3accb9fe561c81ebc7fd885b955866666d9"
+      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.2/tailtunnel-v0.1.2-darwin-amd64.tar.gz"
+      sha256 "6902ac08b8cfbd3c665761a5ecbeca0ffde546c9e297d7788bbde6f6209859a3"
 
       def install
         bin.install "tailtunnel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "50201c182774d0c44cac333fce2dbbbf1c615e3be817b2416f7a32cc1e619f74"
+      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.2/tailtunnel-v0.1.2-darwin-arm64.tar.gz"
+      sha256 "d5c1794cf80f1139845fd701f531296395cebd0aa039746f9f93b9ce266cf3b9"
 
       def install
         bin.install "tailtunnel"
@@ -31,15 +31,15 @@ class Tailtunnel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-linux-amd64.tar.gz"
-      sha256 "5cc968a8cf413bd6b6f6c2d8d6162195df45b06f907930dfa2cc4506d995d5f5"
+      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.2/tailtunnel-v0.1.2-linux-amd64.tar.gz"
+      sha256 "dd7f3c6eba701e9fd7ff486eb66951014cd70d8993d87f81b98003e3d7fe8b32"
       def install
         bin.install "tailtunnel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-linux-arm64.tar.gz"
-      sha256 "b3205c809b113f24b806baeb5abb997cb39e5e55b0e733f27a7813456474da25"
+      url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.2/tailtunnel-v0.1.2-linux-arm64.tar.gz"
+      sha256 "e3bb583bc51052ec343e680901d943d61072f88e7cc043bbd27440fb73ec0e54"
       def install
         bin.install "tailtunnel"
       end
