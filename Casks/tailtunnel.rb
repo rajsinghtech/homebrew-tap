@@ -1,6 +1,6 @@
 cask "tailtunnel" do
-  version "0.0.6"
-  sha256 "c28d318c0c4f79bf13e21a906c04108b83fb49aaffdb3fb489533f94f2e3cfeb"
+  version "0.0.7"
+  sha256 "38332a1b2f2e2ca39f6a6c8b3e6d1b90e5ad216b26d334978d90d1c33fb90d67"
 
   url "https://github.com/rajsinghtech/tailtunnel/releases/download/v#{version}/TailTunnel.zip"
   name "TailTunnel"
