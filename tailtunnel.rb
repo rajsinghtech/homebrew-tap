@@ -13,7 +13,7 @@ class Tailtunnel < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-darwin-amd64.tar.gz"
-      sha256 "196c8bb89dcedb02e0dc766a9840d81c9604e417d1355a118b6a7bfba7de412f"
+      sha256 "d7ed26a1168268e1ff0767589cada3accb9fe561c81ebc7fd885b955866666d9"
 
       def install
         bin.install "tailtunnel"
@@ -21,7 +21,7 @@ class Tailtunnel < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "28809dc64fd3dfa4ad6cbf980eef665f66e3e4e39a7731d39f0b2813f3338f3f"
+      sha256 "50201c182774d0c44cac333fce2dbbbf1c615e3be817b2416f7a32cc1e619f74"
 
       def install
         bin.install "tailtunnel"
@@ -32,14 +32,14 @@ class Tailtunnel < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-linux-amd64.tar.gz"
-      sha256 "3cf651a86993dfafb3ab164d7e02de10a9c480cfd70ed6b11dd0e7f1ec91af12"
+      sha256 "5cc968a8cf413bd6b6f6c2d8d6162195df45b06f907930dfa2cc4506d995d5f5"
       def install
         bin.install "tailtunnel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rajsinghtech/tailtunnel/releases/download/v0.1.0/tailtunnel-v0.1.0-linux-arm64.tar.gz"
-      sha256 "c2c452a4c5ab0a57a29c684b06e63a05121cacf4913e5f2f1effcd0db08323d4"
+      sha256 "b3205c809b113f24b806baeb5abb997cb39e5e55b0e733f27a7813456474da25"
       def install
         bin.install "tailtunnel"
       end
