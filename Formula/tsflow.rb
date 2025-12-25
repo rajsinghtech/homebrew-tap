@@ -5,21 +5,21 @@
 class Tsflow < Formula
   desc "Tailscale network flow visualizer - monitor traffic between nodes in your tailnet"
   homepage "https://github.com/rajsinghtech/tsflow"
-  version "1.0.10"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.0.10/tsflow-v1.0.10-darwin-amd64.tar.gz"
-      sha256 "ddf20b49cab761a40fe675644d9d92b64b1a6547d4efd4343a5f1cfcbc9cee0d"
+      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.1.0/tsflow-v1.1.0-darwin-amd64.tar.gz"
+      sha256 "fcf3ef719edfd2cd32f9124a5b3326e4a963e66b15a5b348c865c4287cc134dc"
 
       def install
         bin.install "tsflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.0.10/tsflow-v1.0.10-darwin-arm64.tar.gz"
-      sha256 "0b96e490396bb7f88b7b05f7fcb18882fa3a6f7ed385f6900b8adb46c09a0d44"
+      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.1.0/tsflow-v1.1.0-darwin-arm64.tar.gz"
+      sha256 "54287eec164f4bfced5dce85196fcd81c138144a5e5816c2049743926e1bba4e"
 
       def install
         bin.install "tsflow"
@@ -29,15 +29,15 @@ class Tsflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.0.10/tsflow-v1.0.10-linux-amd64.tar.gz"
-      sha256 "170df4d8d94f220096b58faa1e1029b9c2c8ab3cd3d23649e1bde973cbfa1bfe"
+      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.1.0/tsflow-v1.1.0-linux-amd64.tar.gz"
+      sha256 "31054aab778ed34c6c356e5d1a6bc4b75f619e731961886cbfca910184f74752"
       def install
         bin.install "tsflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.0.10/tsflow-v1.0.10-linux-arm64.tar.gz"
-      sha256 "370977a32931a0609231187b5fe15cba07761d196d01686ae331c97682708500"
+      url "https://github.com/rajsinghtech/tsflow/releases/download/v1.1.0/tsflow-v1.1.0-linux-arm64.tar.gz"
+      sha256 "6d778992c311a40bc6b323c852128af0434b5c3314c8295ef037fc25d4a67c94"
       def install
         bin.install "tsflow"
       end
