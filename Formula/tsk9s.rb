@@ -5,23 +5,23 @@
 class Tsk9s < Formula
   desc "k9s in the browser over Tailscale"
   homepage "https://github.com/rajsinghtech/tsk9s"
-  version "0.1.3"
+  version "0.1.5"
   license "MIT"
 
   depends_on "k9s"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.3/tsk9s-v0.1.3-darwin-amd64.tar.gz"
-      sha256 "7874c528047da0dd8a5a9a3c0c83a9e0912025c95b03886eeda9797427f14713"
+      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.5/tsk9s-v0.1.5-darwin-amd64.tar.gz"
+      sha256 "7e7f502df9c947303f87590e962af15aefc89e142af1b3a54acf91d8293be63a"
 
       define_method(:install) do
         bin.install "tsk9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.3/tsk9s-v0.1.3-darwin-arm64.tar.gz"
-      sha256 "8e9ec536bf9cfdb83f3db1ff5a7aae7add0a40fc66d5d520305c0808670ad570"
+      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.5/tsk9s-v0.1.5-darwin-arm64.tar.gz"
+      sha256 "729444f403b6a29f24dd05fad05000504b65e88058396ebf7cc8c7059ae9f8e6"
 
       define_method(:install) do
         bin.install "tsk9s"
@@ -31,15 +31,15 @@ class Tsk9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.3/tsk9s-v0.1.3-linux-amd64.tar.gz"
-      sha256 "7113dd61519ec12d300779eeb78525308cb4744c88a56adb97bdb278f45961b2"
+      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.5/tsk9s-v0.1.5-linux-amd64.tar.gz"
+      sha256 "e05b7138b57efe5511df93fac497059fa57656f114cf64bf6b590926583ccf4b"
       define_method(:install) do
         bin.install "tsk9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.3/tsk9s-v0.1.3-linux-arm64.tar.gz"
-      sha256 "ac88271211975b4044c914f1e15f83e7e78316be2230a05f92efb1baaf945133"
+      url "https://github.com/rajsinghtech/tsk9s/releases/download/v0.1.5/tsk9s-v0.1.5-linux-arm64.tar.gz"
+      sha256 "f80dc8dd98f83c282f7221164364e2b34ae1f2ec41d7e349d9b2d1cd98c5357e"
       define_method(:install) do
         bin.install "tsk9s"
       end
