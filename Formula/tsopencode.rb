@@ -5,21 +5,21 @@
 class Tsopencode < Formula
   desc "opencode on your Tailscale tailnet via tsnet — no system tailscaled required"
   homepage "https://github.com/rajsinghtech/tsopencode"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.6/tsopencode-v0.1.6-darwin-amd64.tar.gz"
-      sha256 "5a0b9d249acce1dd1dd5b489ff3e9cffc7cf1d59eb727905ed98a0e4bf3f6c48"
+      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.7/tsopencode-v0.1.7-darwin-amd64.tar.gz"
+      sha256 "5f51f59ec62619abcc43856c519150a2d7523dcddbfdcc82dbfc0b8472b87766"
 
       define_method(:install) do
         bin.install "tsopencode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.6/tsopencode-v0.1.6-darwin-arm64.tar.gz"
-      sha256 "6dc8156a89a970ca3786012f6246994730cead663449648c3e169b304b266780"
+      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.7/tsopencode-v0.1.7-darwin-arm64.tar.gz"
+      sha256 "66d1a6e025112888a7ff8a306fa042fad35911066d980a34d8a2fc3cd65bb498"
 
       define_method(:install) do
         bin.install "tsopencode"
@@ -29,15 +29,15 @@ class Tsopencode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.6/tsopencode-v0.1.6-linux-amd64.tar.gz"
-      sha256 "f573d49c9739fd016eaeea6a7df0e638428556e429f6eb122248adce2dfe897b"
+      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.7/tsopencode-v0.1.7-linux-amd64.tar.gz"
+      sha256 "7d9c2861c9a28f82253ebfb9f15371d454a386a152625d52f388ce19e83fced6"
       define_method(:install) do
         bin.install "tsopencode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.6/tsopencode-v0.1.6-linux-arm64.tar.gz"
-      sha256 "3c59bb65e278ed5640ec20a6f848028f71314c4812679bbb75d3974660d8b25c"
+      url "https://github.com/rajsinghtech/tsopencode/releases/download/v0.1.7/tsopencode-v0.1.7-linux-arm64.tar.gz"
+      sha256 "041b5d758d4cc71373a6cc472316d6d976f357c5c9e9d43113ea39d73858dc63"
       define_method(:install) do
         bin.install "tsopencode"
       end
