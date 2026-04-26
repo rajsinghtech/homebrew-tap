@@ -34,10 +34,10 @@ cask "tsopencode" do
 
   binary "tsopencode"
 
-  service "run [opt_bin/"tsopencode"]
+  service "run [opt_bin/'tsopencode']
 keep_alive true
-log_path var/"log/tsopencode.log"
-error_log_path var/"log/tsopencode.log"
+log_path var/'log/tsopencode.log'
+error_log_path var/'log/tsopencode.log'
 environment_variables PATH: std_service_path_env
 "
 
