@@ -1,22 +1,22 @@
 class Rustscale < Formula
   desc "Rust implementation of Tailscale's client stack"
   homepage "https://github.com/rajsinghtech/rustscale"
-  version "0.1.2"
+  version "0.1.3"
   license "BSD-3-Clause"
 
   on_macos do
-    url "https://github.com/rajsinghtech/rustscale/releases/download/v0.1.2/rustscale-universal-apple-darwin.tar.gz"
-    sha256 "343c3c45b1cf1e50095e8a917198f118b58dc92901b1a502bf4d309853d2f47e"
+    url "https://github.com/rajsinghtech/rustscale/releases/download/v0.1.3/rustscale-universal-apple-darwin.tar.gz"
+    sha256 "4ef3d717bc8fdca81b0b87f856ae780065cbfa59c31a883339e6e904aed738cf"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/rajsinghtech/rustscale/releases/download/v0.1.2/rustscale-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "081cc5ce40cf5a5329409c2b4a1a9f910604e10d9b63c4f9749477f93a5326a5"
+      url "https://github.com/rajsinghtech/rustscale/releases/download/v0.1.3/rustscale-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "626e12571e888c9e9a5a4a8ffc1fbba05ddadabfe5f05fe155865e8060db47b7"
     end
     on_arm do
-      url "https://github.com/rajsinghtech/rustscale/releases/download/v0.1.2/rustscale-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9b2ac8d84e6fa59d1bf95bc7a057de596c15fe2d22ac1b9b7c1c6d7632d83980"
+      url "https://github.com/rajsinghtech/rustscale/releases/download/v0.1.3/rustscale-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c64cea335da570e376d0eed0e4fe9b4c82f9167040b286a8fbf04ce8d183ac8a"
     end
   end
 
