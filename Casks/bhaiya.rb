@@ -1,6 +1,6 @@
 cask "bhaiya" do
   version "0.1.3"
-  sha256 "df15fb114a6b818ff030afffd9849735551370d827994d82c232e2a169efd742"
+  sha256 "09c58e1907d131d9c6c0947eb5be0be775adbb9ec9f775e11771b352657cee8d"
 
   url "https://github.com/rajsinghtech/homebrew-tap/releases/download/bhaiya-v#{version}/Bhaiya-#{version}-macOS.zip"
   name "Bhaiya Client"
