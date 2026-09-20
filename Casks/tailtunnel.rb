@@ -14,10 +14,9 @@ cask "tailtunnel" do
 
   app "TailTunnel.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/TailTunnel.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/TailTunnel.app"]
   end
 
   zap trash: "~/.tailtunnel"
