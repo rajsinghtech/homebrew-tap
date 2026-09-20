@@ -17,10 +17,9 @@ cask "bhaiya" do
 
   app "Bhaiya Client.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Bhaiya Client.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/Bhaiya Client.app"]
   end
 
   zap trash: [

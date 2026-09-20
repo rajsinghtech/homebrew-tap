@@ -16,10 +16,9 @@ cask "spurfire" do
 
   # Temporary until the public app is Developer ID signed and notarized.
   # The release archive is integrity-pinned above before quarantine is cleared.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Spurfire.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/Spurfire.app"]
   end
 
   zap trash: "~/Library/Application Support/Godot/app_userdata/Spurfire"
